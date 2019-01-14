@@ -158,5 +158,8 @@ try:
 except ImportError:
     print("local_settings.py not found")
 
+import django_heroku
+django_heroku.settings(locals())
+
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
